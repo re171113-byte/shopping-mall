@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(start chrome http://localhost:3000)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

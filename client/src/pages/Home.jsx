@@ -236,9 +236,16 @@ function Home() {
   return (
     <div className="bg-surface min-h-screen">
       {/* Header */}
-      <header className="sticky top-0 bg-cream z-20 px-4 py-3 border-b border-stone-200">
+      <header className="sticky top-0 bg-cream z-20 px-4 py-3">
         <div className="flex items-center justify-between">
-          <h1 className="text-xl font-bold text-primary tracking-wide">STYLISH</h1>
+          <h1 className="text-2xl" style={{
+            fontFamily: "'Bebas Neue', sans-serif",
+            letterSpacing: '-0.02em',
+            background: 'linear-gradient(135deg, #D4AF37 0%, #F4E4BA 25%, #C9A227 50%, #E8D48B 75%, #BF9B30 100%)',
+            WebkitBackgroundClip: 'text',
+            WebkitTextFillColor: 'transparent',
+            backgroundClip: 'text'
+          }}>BOUTIQUE</h1>
           <div className="flex items-center gap-3">
             <button onClick={() => navigate('/search')} className="p-2 text-primary">
               <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">

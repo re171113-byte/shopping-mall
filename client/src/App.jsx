@@ -10,12 +10,10 @@ import MyPage from './pages/MyPage'
 import Onboarding from './pages/Onboarding'
 import Login from './pages/Login'
 import Search from './pages/Search'
-import InstallBanner from './components/InstallBanner'
 
 function App() {
   return (
     <BrowserRouter>
-      <InstallBanner />
       <Routes>
         <Route path="/onboarding" element={<Onboarding />} />
         <Route path="/login" element={<Login />} />

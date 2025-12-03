@@ -200,7 +200,7 @@ const topBrands = [
 // 전체 상품 데이터
 const allProducts = [
   { id: 11, name: '트위드 크롭 재킷', brand: 'SANDRO', price: 358000, salePrice: 268000, image: 'https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=300&h=400&fit=crop', isNew: true, isFreeShipping: true },
-  { id: 12, name: '플리츠 미디 스커트', brand: 'COS', price: 129000, salePrice: null, image: 'https://images.unsplash.com/photo-1583496661160-fb5886a0uj4a?w=300&h=400&fit=crop', isNew: false, isFreeShipping: true },
+  { id: 12, name: '플리츠 미디 스커트', brand: 'COS', price: 129000, salePrice: null, image: 'https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?w=300&h=400&fit=crop', isNew: false, isFreeShipping: true },
   { id: 13, name: '캐시미어 머플러', brand: 'THEORY', price: 198000, salePrice: 158000, image: 'https://images.unsplash.com/photo-1601924994987-69e26d50dc26?w=300&h=400&fit=crop', isNew: false, isFreeShipping: true },
   { id: 14, name: '앵클부츠', brand: 'STUART WEITZMAN', price: 498000, salePrice: 398000, image: 'https://images.unsplash.com/photo-1608256246200-53e635b5b65f?w=300&h=400&fit=crop', isNew: true, isFreeShipping: true },
   { id: 15, name: '퀼팅 체인백', brand: 'MAJE', price: 328000, salePrice: null, image: 'https://images.unsplash.com/photo-1566150905458-1bf1fc113f0d?w=300&h=400&fit=crop', isNew: false, isFreeShipping: false },

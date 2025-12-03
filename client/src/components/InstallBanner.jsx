@@ -58,36 +58,37 @@ function InstallBanner() {
 
   return (
     <div className="fixed bottom-16 left-0 right-0 max-w-[480px] mx-auto z-40 px-4 animate-slide-up">
-      <div className="bg-gradient-to-r from-amber-400 to-yellow-400 rounded-xl shadow-lg p-4 flex items-center gap-3">
+      <div className="bg-white border border-stone-200 rounded-xl shadow-lg p-4 flex items-center gap-3">
         {/* 앱 아이콘 */}
-        <div className="w-12 h-12 bg-white rounded-xl shadow flex items-center justify-center flex-shrink-0">
+        <div className="w-12 h-12 bg-stone-800 rounded-xl flex items-center justify-center flex-shrink-0">
           <svg viewBox="0 0 48 48" className="w-8 h-8">
-            <rect x="8" y="12" width="32" height="28" rx="4" fill="#1a1a1a"/>
-            <path d="M16 20h16M16 28h10" stroke="#fff" strokeWidth="2" strokeLinecap="round"/>
-            <circle cx="36" cy="8" r="6" fill="#ef4444"/>
+            {/* 쇼핑백 본체 */}
+            <path d="M10 16L14 40H34L38 16H10Z" fill="#C9A96E"/>
+            {/* 쇼핑백 손잡이 */}
+            <path d="M18 16V12C18 8.68629 20.6863 6 24 6C27.3137 6 30 8.68629 30 12V16" stroke="#C9A96E" strokeWidth="3" fill="none"/>
+            {/* S 로고 */}
+            <text x="24" y="32" textAnchor="middle" fill="#3D3D3D" fontSize="14" fontWeight="bold" fontFamily="sans-serif">S</text>
           </svg>
         </div>
 
         {/* 텍스트 */}
         <div className="flex-1 min-w-0">
-          <p className="font-bold text-gray-900 text-sm">STYLISH 앱 설치</p>
-          <p className="text-xs text-gray-700 truncate">홈 화면에서 빠르게 접속하세요!</p>
+          <p className="font-bold text-gray-800 text-sm">STYLISH 앱 설치</p>
+          <p className="text-xs text-gray-500 truncate">홈 화면에서 빠르게 접속하세요!</p>
         </div>
 
         {/* 설치 버튼 */}
         <button
           onClick={handleInstall}
-          className="w-10 h-10 bg-gray-900 rounded-full flex items-center justify-center flex-shrink-0 active:scale-95 transition-transform"
+          className="px-4 py-2 bg-stone-800 text-white text-sm font-medium rounded-lg flex-shrink-0 active:scale-95 transition-transform"
         >
-          <svg className="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-          </svg>
+          설치
         </button>
 
         {/* 닫기 버튼 */}
         <button
           onClick={handleDismiss}
-          className="w-8 h-8 flex items-center justify-center flex-shrink-0 text-gray-700 hover:text-gray-900"
+          className="w-8 h-8 flex items-center justify-center flex-shrink-0 text-gray-400 hover:text-gray-600"
         >
           <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
